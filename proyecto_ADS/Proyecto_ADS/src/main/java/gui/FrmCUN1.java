@@ -264,8 +264,7 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		}
 	}
 	protected void do_btnNewButton_actionPerformed(ActionEvent e) {
-		
-	System.out.println("DIA 1");
+
 	}
 	
 }
