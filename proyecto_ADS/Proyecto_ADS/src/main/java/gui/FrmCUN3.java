@@ -135,10 +135,9 @@ public class FrmCUN3 extends JFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"ID_OCF", "Nom_Cliente", "Nom_Empresa", "Ref./C\u00F3digo/", "Descripci\u00F3n", "Cantidad", "Precio u", "Total"
+				"ID_Analista", "Nom_Cliente", "Nom_Empresa", "Ref./C\u00F3digo/", "Descripci\u00F3n", "Cantidad", "Precio u", "Total"
 			}
 		));
-		table.getColumnModel().getColumn(2).setPreferredWidth(95);
 		scrollPane.setViewportView(table);
 		
 		lblDetails = new JLabel("Detalles");
@@ -209,7 +208,7 @@ public class FrmCUN3 extends JFrame {
 		panel_3.setForeground(Color.BLACK);
 		panel_3.setToolTipText("");
 		panel_3.setBackground(Color.DARK_GRAY);
-		panel_3.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Jefe OCF", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 255, 255)));
+		panel_3.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Analista Contable", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 255, 255)));
 		panel_3.setBounds(12, 560, 513, 200);
 		contentPane.add(panel_3);
 		panel_3.setLayout(null);
