@@ -90,7 +90,7 @@ public class FrmCUN3 extends JFrame {
 		setIconImage(Toolkit.getDefaultToolkit().getImage(FrmCUN3.class.getResource("/icon/lista-de-verificacion (1).png")));
 		setTitle("Generar informe de presupuestos");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 1150, 907);
+		setBounds(100, 100, 1193, 892);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.DARK_GRAY);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -99,7 +99,7 @@ public class FrmCUN3 extends JFrame {
 		
 		panel = new JPanel();
 		panel.setBackground(new Color(0, 206, 209));
-		panel.setBounds(0, 22, 1134, 93);
+		panel.setBounds(0, 22, 1167, 93);
 		contentPane.add(panel);
 		panel.setLayout(null);
 		
@@ -117,17 +117,17 @@ public class FrmCUN3 extends JFrame {
 		
 		label = new JLabel("");
 		label.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/contract.png")));
-		label.setBounds(1052, 11, 72, 72);
+		label.setBounds(1085, 11, 72, 82);
 		panel.add(label);
 		
 		panel_1 = new JPanel();
 		panel_1.setBackground(new Color(0, 206, 209));
-		panel_1.setBounds(535, 126, 599, 601);
+		panel_1.setBounds(535, 126, 632, 601);
 		contentPane.add(panel_1);
 		panel_1.setLayout(null);
 		
 		scrollPane = new JScrollPane();
-		scrollPane.setBounds(10, 23, 579, 567);
+		scrollPane.setBounds(10, 23, 612, 567);
 		panel_1.add(scrollPane);
 		
 		table = new JTable();
@@ -135,9 +135,10 @@ public class FrmCUN3 extends JFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"ID_OCF", "Cliente", "Ref./Codigo", "Descripci\u00F3n", "Cantidad", "Precio u", "Total"
+				"ID_OCF", "Nom_Cliente", "Nom_Empresa", "Ref./C\u00F3digo/", "Descripci\u00F3n", "Cantidad", "Precio u", "Total"
 			}
 		));
+		table.getColumnModel().getColumn(2).setPreferredWidth(95);
 		scrollPane.setViewportView(table);
 		
 		lblDetails = new JLabel("Detalles");
@@ -284,59 +285,59 @@ public class FrmCUN3 extends JFrame {
 		panel_4.setBackground(Color.DARK_GRAY);
 		panel_4.setForeground(Color.WHITE);
 		panel_4.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Valor de presupuesto", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 255, 255)));
-		panel_4.setBounds(535, 738, 589, 107);
+		panel_4.setBounds(535, 738, 632, 107);
 		contentPane.add(panel_4);
 		panel_4.setLayout(null);
 		
 		lblNewLabel = new JLabel("Neto :");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblNewLabel.setForeground(Color.WHITE);
-		lblNewLabel.setBounds(10, 27, 67, 14);
+		lblNewLabel.setBounds(24, 27, 67, 14);
 		panel_4.add(lblNewLabel);
 		
 		textField = new JTextField();
 		textField.setForeground(Color.WHITE);
 		textField.setBackground(Color.DARK_GRAY);
-		textField.setBounds(67, 26, 76, 20);
+		textField.setBounds(81, 26, 76, 20);
 		panel_4.add(textField);
 		textField.setColumns(10);
 		
 		lblDescuento = new JLabel("Descuento :");
 		lblDescuento.setForeground(Color.WHITE);
 		lblDescuento.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblDescuento.setBounds(185, 27, 100, 14);
+		lblDescuento.setBounds(211, 27, 100, 14);
 		panel_4.add(lblDescuento);
 		
 		textField_1 = new JTextField();
 		textField_1.setForeground(Color.WHITE);
 		textField_1.setBackground(Color.DARK_GRAY);
-		textField_1.setBounds(285, 27, 86, 19);
+		textField_1.setBounds(310, 26, 86, 19);
 		panel_4.add(textField_1);
 		textField_1.setColumns(10);
 		
 		lblIva = new JLabel("IVA :");
 		lblIva.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblIva.setForeground(Color.WHITE);
-		lblIva.setBounds(403, 27, 55, 14);
+		lblIva.setBounds(438, 27, 55, 14);
 		panel_4.add(lblIva);
 		
 		textField_2 = new JTextField();
 		textField_2.setForeground(Color.WHITE);
 		textField_2.setBackground(Color.DARK_GRAY);
-		textField_2.setBounds(460, 26, 86, 20);
+		textField_2.setBounds(508, 26, 86, 20);
 		panel_4.add(textField_2);
 		textField_2.setColumns(10);
 		
 		lblTotalPresupuesto = new JLabel("Total presupuesto :");
 		lblTotalPresupuesto.setForeground(Color.WHITE);
 		lblTotalPresupuesto.setFont(new Font("Tahoma", Font.PLAIN, 16));
-		lblTotalPresupuesto.setBounds(93, 69, 157, 27);
+		lblTotalPresupuesto.setBounds(91, 57, 157, 27);
 		panel_4.add(lblTotalPresupuesto);
 		
 		textField_3 = new JTextField();
 		textField_3.setForeground(Color.WHITE);
 		textField_3.setBackground(Color.DARK_GRAY);
-		textField_3.setBounds(243, 69, 213, 25);
+		textField_3.setBounds(242, 60, 262, 25);
 		panel_4.add(textField_3);
 		textField_3.setColumns(10);
 		
