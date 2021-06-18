@@ -15,7 +15,7 @@ public class FrmCUN2 extends JFrame {
 	 */
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JButton btnPvto;
+	private JButton btnPutoElQue;
 
 	/**
 	 * Launch the application.
@@ -44,8 +44,8 @@ public class FrmCUN2 extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		btnPvto = new JButton("pvto el que lo presione");
-		btnPvto.setBounds(188, 85, 193, 71);
-		contentPane.add(btnPvto);
+		btnPutoElQue = new JButton("Puto el que escriba");
+		btnPutoElQue.setBounds(223, 112, 138, 23);
+		contentPane.add(btnPutoElQue);
 	}
 }
