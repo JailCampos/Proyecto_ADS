@@ -123,7 +123,7 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		txtFirstName.setBackground(Color.DARK_GRAY);
 		
 		txtCdigo = new JTextField();
-		txtCdigo.setBounds(18, 21, 434, 38);
+		txtCdigo.setBounds(18, 21, 402, 38);
 		panel.add(txtCdigo);
 		txtCdigo.setText(" Code*");
 		txtCdigo.setToolTipText("");
@@ -134,7 +134,7 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		
 		btnNewButton = new JButton("");
 		btnNewButton.addActionListener(this);
-		btnNewButton.setBounds(462, 21, 50, 38);
+		btnNewButton.setBounds(430, 21, 82, 38);
 		panel.add(btnNewButton);
 		btnNewButton.setForeground(new Color(0, 128, 128));
 		btnNewButton.setBackground(new Color(0, 206, 209));
@@ -209,7 +209,7 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		textField_10.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		textField_10.setColumns(10);
 		textField_10.setBackground(Color.DARK_GRAY);
-		textField_10.setBounds(15, 18, 434, 38);
+		textField_10.setBounds(15, 18, 410, 38);
 		panel_2.add(textField_10);
 		
 		btnNewButton_2 = new JButton("");
@@ -217,7 +217,7 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		btnNewButton_2.setForeground(new Color(0, 128, 128));
 		btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnNewButton_2.setBackground(new Color(0, 206, 209));
-		btnNewButton_2.setBounds(459, 18, 50, 38);
+		btnNewButton_2.setBounds(435, 18, 74, 38);
 		panel_2.add(btnNewButton_2);
 		
 		btnNewButton_3 = new JButton("");
