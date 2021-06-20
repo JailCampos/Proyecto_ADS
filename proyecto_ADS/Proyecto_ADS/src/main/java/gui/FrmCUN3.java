@@ -43,15 +43,15 @@ public class FrmCUN3 extends JFrame {
 	private JTextField txtDescription;
 	private JTextField txtCantidad;
 	private JTextField txtUnidad;
-	private JButton btnNewButton_3;
+	private JButton buscarEmpresa;
 	private JTextField txtNombres;
-	private JButton btnNewButton_4;
+	private JButton buscarAnalistaContable;
 	private JPanel panel_4;
 	private JTextField txtDireccion;
 	private JLabel lblNewLabel;
 	private JTextField textField;
 	private JPanel panel_5;
-	private JButton btnNewButton_5;
+	private JButton buscarNombresCliente;
 	private JLabel lblDescuento;
 	private JTextField textField_1;
 	private JLabel lblIva;
@@ -66,6 +66,7 @@ public class FrmCUN3 extends JFrame {
 	private JTextField txtApellido;
 	private JTextField txtCorreoElectrnico;
 	private JTextField txtDireccin_1;
+	private JButton buscarPresupuesto;
 
 	/**
 	 * Launch the application.
@@ -179,12 +180,12 @@ public class FrmCUN3 extends JFrame {
 		panel_2.add(txtUnidad);
 		txtUnidad.setColumns(10);
 		
-		btnNewButton_3 = new JButton("");
-		btnNewButton_3.setBackground(Color.CYAN);
-		btnNewButton_3.setForeground(Color.BLACK);
-		btnNewButton_3.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
-		btnNewButton_3.setBounds(422, 23, 81, 32);
-		panel_2.add(btnNewButton_3);
+		buscarEmpresa = new JButton("");
+		buscarEmpresa.setBackground(Color.CYAN);
+		buscarEmpresa.setForeground(Color.BLACK);
+		buscarEmpresa.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
+		buscarEmpresa.setBounds(422, 23, 81, 32);
+		panel_2.add(buscarEmpresa);
 		
 		txtNombres = new JTextField();
 		txtNombres.setForeground(Color.WHITE);
@@ -213,12 +214,12 @@ public class FrmCUN3 extends JFrame {
 		contentPane.add(panel_3);
 		panel_3.setLayout(null);
 		
-		btnNewButton_4 = new JButton("");
-		btnNewButton_4.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
-		btnNewButton_4.setForeground(Color.BLACK);
-		btnNewButton_4.setBackground(Color.CYAN);
-		btnNewButton_4.setBounds(422, 22, 81, 32);
-		panel_3.add(btnNewButton_4);
+		buscarAnalistaContable = new JButton("");
+		buscarAnalistaContable.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
+		buscarAnalistaContable.setForeground(Color.BLACK);
+		buscarAnalistaContable.setBackground(Color.CYAN);
+		buscarAnalistaContable.setBounds(422, 22, 81, 32);
+		panel_3.add(buscarAnalistaContable);
 		
 		txtCdigo = new JTextField();
 		txtCdigo.setText("  Código*");
@@ -272,12 +273,12 @@ public class FrmCUN3 extends JFrame {
 		
 		btnNewButton_1 = new JButton("");
 		btnNewButton_1.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/editar.png")));
-		btnNewButton_1.setBounds(235, 782, 73, 41);
+		btnNewButton_1.setBounds(168, 782, 73, 41);
 		contentPane.add(btnNewButton_1);
 		
 		btnNewButton_2 = new JButton("");
 		btnNewButton_2.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/cerrar.png")));
-		btnNewButton_2.setBounds(401, 782, 73, 41);
+		btnNewButton_2.setBounds(282, 782, 73, 41);
 		contentPane.add(btnNewButton_2);
 		
 		panel_4 = new JPanel();
@@ -347,12 +348,12 @@ public class FrmCUN3 extends JFrame {
 		contentPane.add(panel_5);
 		panel_5.setLayout(null);
 		
-		btnNewButton_5 = new JButton("");
-		btnNewButton_5.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
-		btnNewButton_5.setForeground(Color.BLACK);
-		btnNewButton_5.setBackground(Color.CYAN);
-		btnNewButton_5.setBounds(424, 22, 81, 32);
-		panel_5.add(btnNewButton_5);
+		buscarNombresCliente = new JButton("");
+		buscarNombresCliente.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
+		buscarNombresCliente.setForeground(Color.BLACK);
+		buscarNombresCliente.setBackground(Color.CYAN);
+		buscarNombresCliente.setBounds(424, 22, 81, 32);
+		panel_5.add(buscarNombresCliente);
 		
 		txtNombre = new JTextField();
 		txtNombre.setForeground(Color.WHITE);
@@ -380,5 +381,10 @@ public class FrmCUN3 extends JFrame {
 		txtCifNif.setBounds(10, 108, 495, 38);
 		panel_5.add(txtCifNif);
 		txtCifNif.setColumns(10);
+		
+		buscarPresupuesto = new JButton("");
+		buscarPresupuesto.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
+		buscarPresupuesto.setBounds(396, 782, 73, 41);
+		contentPane.add(buscarPresupuesto);
 	}
 }

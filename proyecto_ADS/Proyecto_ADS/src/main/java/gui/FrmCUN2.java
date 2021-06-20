@@ -45,7 +45,7 @@ public class FrmCUN2 extends JFrame {
 		contentPane.setLayout(null);
 		
 		btnPutoElQue = new JButton("Puto el que escriba");
-		btnPutoElQue.setBounds(223, 112, 138, 23);
+		btnPutoElQue.setBounds(134, 99, 138, 23);
 		contentPane.add(btnPutoElQue);
 	}
 }
