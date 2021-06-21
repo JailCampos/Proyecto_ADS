@@ -225,7 +225,7 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		btnNewButton_3.setForeground(new Color(0, 128, 128));
 		btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnNewButton_3.setBackground(new Color(0, 206, 209));
-		btnNewButton_3.setBounds(320, 670, 95, 38);
+		btnNewButton_3.setBounds(382, 693, 95, 38);
 		contentPane.add(btnNewButton_3);
 		
 		btnNewButton_4 = new JButton("");
@@ -233,7 +233,7 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		btnNewButton_4.setForeground(new Color(0, 128, 128));
 		btnNewButton_4.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnNewButton_4.setBackground(new Color(0, 206, 209));
-		btnNewButton_4.setBounds(162, 670, 95, 38);
+		btnNewButton_4.setBounds(224, 693, 95, 38);
 		contentPane.add(btnNewButton_4);
 		
 		btnNewButton_5 = new JButton("");
@@ -241,7 +241,7 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		btnNewButton_5.setForeground(new Color(0, 128, 128));
 		btnNewButton_5.setFont(new Font("Tahoma", Font.PLAIN, 15));
 		btnNewButton_5.setBackground(new Color(0, 206, 209));
-		btnNewButton_5.setBounds(25, 670, 95, 38);
+		btnNewButton_5.setBounds(87, 693, 95, 38);
 		contentPane.add(btnNewButton_5);
 		
 		JPanel panel_1 = new JPanel();
@@ -330,14 +330,6 @@ public class FrmCUN1 extends JFrame implements ActionListener {
 		lblF.setBounds(1060, 10, 72, 71);
 		panel_5.add(lblF);
 		lblF.setIcon(new ImageIcon(FrmCUN1.class.getResource("/icon/contract.png")));
-		
-		JButton btnNewButton_1 = new JButton("");
-		btnNewButton_1.setIcon(new ImageIcon(FrmCUN1.class.getResource("/icon/lupa.png")));
-		btnNewButton_1.setForeground(new Color(0, 128, 128));
-		btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 15));
-		btnNewButton_1.setBackground(new Color(0, 206, 209));
-		btnNewButton_1.setBounds(449, 670, 82, 38);
-		contentPane.add(btnNewButton_1);
 	}
 
 	public void actionPerformed(ActionEvent e) {

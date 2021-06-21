@@ -1,6 +1,5 @@
 package gui;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
@@ -12,7 +11,6 @@ import java.awt.Font;
 import javax.swing.ImageIcon;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.border.LineBorder;
 import javax.swing.border.TitledBorder;
 import javax.swing.UIManager;
 import javax.swing.JButton;
@@ -43,15 +41,15 @@ public class FrmCUN3 extends JFrame {
 	private JTextField txtDescription;
 	private JTextField txtCantidad;
 	private JTextField txtUnidad;
-	private JButton buscarEmpresa;
+	private JButton btnNewButton_3;
 	private JTextField txtNombres;
-	private JButton buscarAnalistaContable;
+	private JButton btnNewButton_4;
 	private JPanel panel_4;
 	private JTextField txtDireccion;
 	private JLabel lblNewLabel;
 	private JTextField textField;
 	private JPanel panel_5;
-	private JButton buscarNombresCliente;
+	private JButton btnNewButton_5;
 	private JLabel lblDescuento;
 	private JTextField textField_1;
 	private JLabel lblIva;
@@ -60,13 +58,14 @@ public class FrmCUN3 extends JFrame {
 	private JTextField textField_3;
 	private JTextField txtNombre;
 	private JTextField txtDireccin;
-	private JTextField txtCifNif;
 	private JTextField txtCdigo;
 	private JTextField textField_4;
 	private JTextField txtApellido;
 	private JTextField txtCorreoElectrnico;
 	private JTextField txtDireccin_1;
-	private JButton buscarPresupuesto;
+	private JTextField txtPrecioU;
+	private JTextField txtNombre_1;
+	private JTextField txtApellido_1;
 
 	/**
 	 * Launch the application.
@@ -136,7 +135,7 @@ public class FrmCUN3 extends JFrame {
 			new Object[][] {
 			},
 			new String[] {
-				"ID_Analista", "Nom_Cliente", "Nom_Empresa", "Ref./C\u00F3digo/", "Descripci\u00F3n", "Cantidad", "Precio u", "Total"
+				"ID_Analista", "Cod_Cliente", "Empresa", "Ref./Codigo/", "Descripci\u00F3n", "Cantidad", "Precio u", "Total"
 			}
 		));
 		scrollPane.setViewportView(table);
@@ -175,24 +174,24 @@ public class FrmCUN3 extends JFrame {
 		txtUnidad.setBackground(Color.DARK_GRAY);
 		txtUnidad.setForeground(Color.WHITE);
 		txtUnidad.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		txtUnidad.setText("  Fax*\r\n");
+		txtUnidad.setText("  Descripción*");
 		txtUnidad.setBounds(10, 212, 493, 38);
 		panel_2.add(txtUnidad);
 		txtUnidad.setColumns(10);
 		
-		buscarEmpresa = new JButton("");
-		buscarEmpresa.setBackground(Color.CYAN);
-		buscarEmpresa.setForeground(Color.BLACK);
-		buscarEmpresa.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
-		buscarEmpresa.setBounds(422, 23, 81, 32);
-		panel_2.add(buscarEmpresa);
+		btnNewButton_3 = new JButton("");
+		btnNewButton_3.setBackground(Color.CYAN);
+		btnNewButton_3.setForeground(Color.BLACK);
+		btnNewButton_3.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
+		btnNewButton_3.setBounds(422, 23, 81, 32);
+		panel_2.add(btnNewButton_3);
 		
 		txtNombres = new JTextField();
 		txtNombres.setForeground(Color.WHITE);
 		txtNombres.setBackground(Color.DARK_GRAY);
 		txtNombres.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		txtNombres.setText("  CIF / NIF*");
-		txtNombres.setBounds(10, 114, 493, 38);
+		txtNombres.setText("  Cantidad*");
+		txtNombres.setBounds(10, 114, 233, 38);
 		panel_2.add(txtNombres);
 		txtNombres.setColumns(10);
 		
@@ -205,6 +204,15 @@ public class FrmCUN3 extends JFrame {
 		panel_2.add(txtDireccion);
 		txtDireccion.setColumns(10);
 		
+		txtPrecioU = new JTextField();
+		txtPrecioU.setText("  Precio u*");
+		txtPrecioU.setForeground(Color.WHITE);
+		txtPrecioU.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		txtPrecioU.setColumns(10);
+		txtPrecioU.setBackground(Color.DARK_GRAY);
+		txtPrecioU.setBounds(253, 114, 250, 38);
+		panel_2.add(txtPrecioU);
+		
 		panel_3 = new JPanel();
 		panel_3.setForeground(Color.BLACK);
 		panel_3.setToolTipText("");
@@ -214,12 +222,12 @@ public class FrmCUN3 extends JFrame {
 		contentPane.add(panel_3);
 		panel_3.setLayout(null);
 		
-		buscarAnalistaContable = new JButton("");
-		buscarAnalistaContable.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
-		buscarAnalistaContable.setForeground(Color.BLACK);
-		buscarAnalistaContable.setBackground(Color.CYAN);
-		buscarAnalistaContable.setBounds(422, 22, 81, 32);
-		panel_3.add(buscarAnalistaContable);
+		btnNewButton_4 = new JButton("");
+		btnNewButton_4.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
+		btnNewButton_4.setForeground(Color.BLACK);
+		btnNewButton_4.setBackground(Color.CYAN);
+		btnNewButton_4.setBounds(422, 22, 81, 32);
+		panel_3.add(btnNewButton_4);
 		
 		txtCdigo = new JTextField();
 		txtCdigo.setText("  Código*");
@@ -268,17 +276,17 @@ public class FrmCUN3 extends JFrame {
 		
 		btnNewButton = new JButton("");
 		btnNewButton.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/signo-mas-para-agregar.png")));
-		btnNewButton.setBounds(55, 782, 73, 41);
+		btnNewButton.setBounds(87, 780, 73, 41);
 		contentPane.add(btnNewButton);
 		
 		btnNewButton_1 = new JButton("");
 		btnNewButton_1.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/editar.png")));
-		btnNewButton_1.setBounds(168, 782, 73, 41);
+		btnNewButton_1.setBounds(233, 780, 73, 41);
 		contentPane.add(btnNewButton_1);
 		
 		btnNewButton_2 = new JButton("");
 		btnNewButton_2.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/cerrar.png")));
-		btnNewButton_2.setBounds(282, 782, 73, 41);
+		btnNewButton_2.setBounds(375, 779, 73, 41);
 		contentPane.add(btnNewButton_2);
 		
 		panel_4 = new JPanel();
@@ -328,7 +336,7 @@ public class FrmCUN3 extends JFrame {
 		panel_4.add(textField_2);
 		textField_2.setColumns(10);
 		
-		lblTotalPresupuesto = new JLabel("Total presupuesto :");
+		lblTotalPresupuesto = new JLabel("Presupuesto Total :");
 		lblTotalPresupuesto.setForeground(Color.WHITE);
 		lblTotalPresupuesto.setFont(new Font("Tahoma", Font.PLAIN, 16));
 		lblTotalPresupuesto.setBounds(91, 57, 157, 27);
@@ -348,18 +356,18 @@ public class FrmCUN3 extends JFrame {
 		contentPane.add(panel_5);
 		panel_5.setLayout(null);
 		
-		buscarNombresCliente = new JButton("");
-		buscarNombresCliente.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
-		buscarNombresCliente.setForeground(Color.BLACK);
-		buscarNombresCliente.setBackground(Color.CYAN);
-		buscarNombresCliente.setBounds(424, 22, 81, 32);
-		panel_5.add(buscarNombresCliente);
+		btnNewButton_5 = new JButton("");
+		btnNewButton_5.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
+		btnNewButton_5.setForeground(Color.BLACK);
+		btnNewButton_5.setBackground(Color.CYAN);
+		btnNewButton_5.setBounds(424, 22, 81, 32);
+		panel_5.add(btnNewButton_5);
 		
 		txtNombre = new JTextField();
 		txtNombre.setForeground(Color.WHITE);
 		txtNombre.setFont(new Font("Tahoma", Font.PLAIN, 20));
 		txtNombre.setBackground(Color.DARK_GRAY);
-		txtNombre.setText("  Nombre*");
+		txtNombre.setText("  Codigo*");
 		txtNombre.setBounds(10, 22, 384, 32);
 		panel_5.add(txtNombre);
 		txtNombre.setColumns(10);
@@ -370,21 +378,25 @@ public class FrmCUN3 extends JFrame {
 		txtDireccin.setBackground(Color.DARK_GRAY);
 		txtDireccin.setText("  Dirección*");
 		txtDireccin.setColumns(10);
-		txtDireccin.setBounds(10, 65, 495, 32);
+		txtDireccin.setBounds(10, 114, 495, 32);
 		panel_5.add(txtDireccin);
 		
-		txtCifNif = new JTextField();
-		txtCifNif.setFont(new Font("Tahoma", Font.PLAIN, 20));
-		txtCifNif.setText("  CIF / NIF*");
-		txtCifNif.setForeground(Color.WHITE);
-		txtCifNif.setBackground(Color.DARK_GRAY);
-		txtCifNif.setBounds(10, 108, 495, 38);
-		panel_5.add(txtCifNif);
-		txtCifNif.setColumns(10);
+		txtNombre_1 = new JTextField();
+		txtNombre_1.setText("  Nombre*");
+		txtNombre_1.setForeground(Color.WHITE);
+		txtNombre_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		txtNombre_1.setColumns(10);
+		txtNombre_1.setBackground(Color.DARK_GRAY);
+		txtNombre_1.setBounds(10, 65, 233, 38);
+		panel_5.add(txtNombre_1);
 		
-		buscarPresupuesto = new JButton("");
-		buscarPresupuesto.setIcon(new ImageIcon(FrmCUN3.class.getResource("/icon/lupa.png")));
-		buscarPresupuesto.setBounds(396, 782, 73, 41);
-		contentPane.add(buscarPresupuesto);
+		txtApellido_1 = new JTextField();
+		txtApellido_1.setText("  Apellido*");
+		txtApellido_1.setForeground(Color.WHITE);
+		txtApellido_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		txtApellido_1.setColumns(10);
+		txtApellido_1.setBackground(Color.DARK_GRAY);
+		txtApellido_1.setBounds(272, 65, 233, 38);
+		panel_5.add(txtApellido_1);
 	}
 }
